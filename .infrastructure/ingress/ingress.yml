@@ -8,10 +8,10 @@ spec:
   rules:
   - http:
       paths:
-      - path: /(.*)
+      - path: /
         pathType: ImplementationSpecific
         backend:
           service:
-            name: app-todo-service
+            name: todoapp-service
             port:
               number: 80
